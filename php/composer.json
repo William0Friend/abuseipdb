@@ -1,0 +1,42 @@
+{
+    "name": "william0friend/abuseipdb-php",
+    "description": "simple php interface to abuseipdb",
+    "keywords": [
+        "william0friend",
+        "abuseipdb-php"
+    ],
+    "homepage": "https://github.com/william0friend/abuseipdb-php",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "William Friend",
+            "email": "william.friend777@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "William0friend\\AbuseipdbPhp\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "William0friend\\AbuseipdbPhp\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
